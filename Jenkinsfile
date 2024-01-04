@@ -22,7 +22,7 @@ pipeline {
         stage('Run ads_keywords.py') {
             steps {
                 script {
-                    sh 'python3 ads_keywords.py'
+                    sh 'python3 ads_keyword.py'
                 }
             }
         }
