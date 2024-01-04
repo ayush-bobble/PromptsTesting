@@ -10,7 +10,7 @@ params = {
     "clientId": "7wZFJWA5chjgat68y826IAIKQ6s197RM",
     "timezone": "Asia/Kolkata",
     "sdkVersion": "12",
-    "deviceId": "179a5471520f8a8a",
+    "deviceId": "9646582087000GS",
 }
 
 try:
