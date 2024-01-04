@@ -10,7 +10,7 @@ params = {
     "clientId": "7wZFJWA5chjgat68y826IAIKQ6s197RM",
     "timezone": "Asia/Kolkata",
     "sdkVersion": "12",
-    "deviceId": "9646582087000GS",
+    "deviceId": "179a5471520f8a8a",
 }
 
 try:
@@ -55,7 +55,7 @@ with open(filename, 'r') as rf:
 print(second_data)
 
 # device = sys.argv[1]
-device = "RZ8M214NNBA"
+device = "9646582087000GS"
         # Prepare environment variables for maestro command
 for i, word in enumerate(second_data):
     env_vars = ['-e', f'WORD={word}']
