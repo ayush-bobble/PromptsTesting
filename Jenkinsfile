@@ -19,10 +19,22 @@ pipeline {
             }
         }
 
+        stage('Install Maestro') {
+            steps {
+                script {
+                    // Install Maestro using curl and bash
+                    sh 'curl -Ls "https://get.maestro.mobile.dev" | bash'
+
+                    // Add Maestro bin directory to the PATH
+                    sh 'export PATH="$PATH":"$HOME/.maestro/bin"'
+                }
+            }
+        }
+
         stage('Run ads_keywords.py') {
             steps {
                 script {
-                    sh 'python3 ads_keyword.py'
+                    sh 'python3 ads_keywords.py'
                 }
             }
         }
