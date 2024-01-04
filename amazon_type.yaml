@@ -1,0 +1,6 @@
+appId: in.amazon.mShop.android.shopping
+---
+- inputText: ${WORD}
+# - inputText: gow
+- takeScreenshot: screenshot/${WORD}
+- eraseText

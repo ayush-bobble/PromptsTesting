@@ -1,0 +1,7 @@
+appId: in.amazon.mShop.android.shopping
+---
+- launchApp
+- tapOn:
+    id: "in.amazon.mShop.android.shopping:id/chrome_search_hint_view"
+- inputText: screenshot/${WORD}
+- eraseText
