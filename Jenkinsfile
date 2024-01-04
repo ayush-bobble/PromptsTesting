@@ -21,6 +21,7 @@ pipeline {
     post {
         always {
             // Clean up or post-build actions if needed
+            echo 'This block is optional and can be used for clean-up actions.'
         }
     }
 }
