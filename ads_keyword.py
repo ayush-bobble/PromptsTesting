@@ -61,9 +61,9 @@ for i, word in enumerate(second_data):
     env_vars = ['-e', f'WORD={word}']
     if i == 0:
         # run the original script for the first env variable
-        subprocess.run(["maestro", "--device="+device,"test"] + env_vars + ["amazon_start.yaml"])
+        subprocess.run(["/home/bobble/.maestro/bin/maestro", "--device="+device,"test"] + env_vars + ["amazon_start.yaml"])
         print("Suggestion testing successful for first env variable")
     else:
         # run a different script for the remaining env variables
-        subprocess.run(["maestro", "--device="+device,"test"] + env_vars + ["amazon_type.yaml"])
+        subprocess.run(["/home/bobble/.maestro/bin/maestro", "--device="+device,"test"] + env_vars + ["amazon_type.yaml"])
         print(f"Suggestion testing successful for env variable {i+1}")

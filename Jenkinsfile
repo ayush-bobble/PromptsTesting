@@ -27,7 +27,7 @@ pipeline {
 
                     // Add Maestro bin directory to the PATH
                     sh 'export PATH="$PATH":"$HOME/.maestro/bin"'
-                    cd maestro/src
+            
                 }
             }
         }
