@@ -3,10 +3,13 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {
-                // Checkout the code from your repository
-                git 'https://github.com/ayush-bobble/PromptsTesting.git'
-            }
+                checkout(
+                    [
+                        $class: 'GitSCM', branches: [[name: """*/main"""]],
+                        extensions: [],
+                        userRemoteConfigs: [[credentialsId: 'ee89bfbe-0c17-482f-bb0a-29a7f33ef69d', url: 'https://github.com/ayush-bobble/PromptsTesting.git']]
+                    ]
+                )
         }
 
         stage('Run ads_keywords.py') {
