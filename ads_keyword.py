@@ -55,7 +55,7 @@ with open(filename, 'r') as rf:
 print(second_data)
 
 # device = sys.argv[1]
-device = "9646582087000GS"
+device = "94MAY0R60A"
         # Prepare environment variables for maestro command
 for i, word in enumerate(second_data):
     env_vars = ['-e', f'WORD={word}']
